@@ -1,0 +1,230 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color:#003251;
+    --secondary-color: #fff700;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    line-height: 1.4;
+    font-weight: 300;
+}
+header{
+    background: var(--lighting-color);
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    
+}
+nav .logo{
+font-size: 2rem;
+font-weight: 700;
+}
+nav ul{
+    display: flex ;
+    list-style: none;
+    gap: 10px;
+}
+nav li{
+    font-size: 1.4rem;
+    border-bottom: 0.2rem solid transparent ;
+    transition: 0.3s ease-in-out;
+}
+nav li:hover{
+    border-bottom: 0.2rem var(--secondary-color) solid;
+    transition: 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#hero{
+    background:var(--darker-color);
+    padding: 4rem 0;
+    border-bottom: 4px solid var(--lighting-color);
+}
+#hero .container{
+    display: flex;
+    /* flex-direction: column; */justify-content: space-around;
+    align-items: center;
+}
+.hero_content{
+    display: grid;
+    place-items: center;
+}
+.hero_content h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hi{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.name_text{
+    font-size: 5rem;
+}
+.hero_content h2{
+    font-size: 4rem;
+    font-weight: bold;
+
+    overflow: hidden;
+    border-right: 0.14em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink-caret{
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: orange;
+    }
+}
+
+
+/* project section  */
+#project{
+    background: var(--darker-color);
+}
+#project h2{
+    font-size: 4rem;
+    text-align: center;
+    padding:2rem 0;
+}
+.project_container{
+    display: flex;
+    /* border: 3px solid grey; */
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.row1{
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: centers;
+    display:flex;  
+}
+.row2{
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: centers;
+    display:flex;  
+}
+.card{
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+
+}
+.card:hover{
+    transform:  scale(1.05);
+    transition: 1s ease-in-out;
+}
+.card:hover img{
+    transform:  scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+.card:hover .card_content{
+    background: white;
+    color:var(--dark-color);
+    transform: translateY(0px);
+}
+.card_content{
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+.card_content h3{
+    text-align: center;
+}
+ 
+/* contact Section  */
+#contact{
+    background: var(--dark-color);
+}
+#contact h2{
+font-size: 4rem;
+text-align: center;
+margin: 1rem 0;
+}
+.container_last{
+    text-align: center;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;   
+}
+footer{
+    background: var(--dark-color);
+    padding: 2rem;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    /* height: 20px; */
+}
+
+/* media query  */
+@media( max-width: 786px){
+    html{
+        font-size: 40%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_img{
+        display: grid;
+        place-items: center;
+    }
+    #contact .container{
+        height: 70vh;
+    }
+}
+@media(max-width: 500px){
+    html{
+        font-size: 32%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .hero_img{
+        display: grid;
+        place-items: center;
+
+    }
+    #contact .container{
+        height: 50vh;
+    }
+}
+

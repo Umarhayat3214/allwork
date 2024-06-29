@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg1{
+    background-image: url("imgs/2trees.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+.bg2{
+    background-image: url("imgs/forest.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    background-position: center;
+    position: relative;
+}
+.bg3{
+    background-image: url("imgs/bird.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh;  */
+    background-position: center;
+    position: relative;
+}
+.ParallText{
+    background-color:  #282e34;
+    width: 20rem;
+    height:3rem ;
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opisty{
+    opacity: 0.6;
+
+}
+.ParallText p{
+    text-transform: uppercase;
+    color:rgb(247, 245, 245);
+
+}
+.section {
+     padding: 50px 80px;
+     text-align: center;
+}
+
+.section-light{
+background: #f4f4f4;
+color: #666;
+}
+.section-dark{
+background: #666;
+color: #f4f4f4;
+}

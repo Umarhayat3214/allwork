@@ -1,0 +1,249 @@
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple500: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "RoBoto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+.navbarHeader{
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--purple500);
+    padding: 10px;
+    color: white;
+    position: static;
+    top: 0;
+    left:0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.4s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero-section {
+    background-image: url(images/hero_image.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row; */
+    color: white;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.containr {
+    gap: 30px;
+    height: 300px;
+    width: 900px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.music1 {
+    padding-top: 50px;
+    background: var(--purple500);
+}
+
+/* .container-music1{
+border: 1px solid white;
+} */
+.iconMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.primary-btn {
+    background-color: var(--red600);
+    color: var(--body);
+}
+
+.secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.iconMusic h4 {
+    width: 70%;
+}
+
+.ipad-iphone-img {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 35%;
+}
+
+.container3 p {
+    width: 70%;
+}
+
+.container4 {
+    background-image: url(images/video.png);
+    min-height: 500px;
+    display: flex;
+    place-items: center;
+    color: white;
+    text-align: center;
+
+}
+.container4 .cotainer4Data {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container4,.hero-section {
+  position: relative;
+  background-position: center;
+  background-size:cover;
+}
+.gift-details{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gift-details button{
+    width:fit-content;
+}
+.gift-section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 150px;
+}
+
+.footerlinks{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 50px;
+    /* margin: 50px; */
+    justify-items: left;
+}
+.footerlinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 05px;
+    align-items:start;
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.menu_barParents{
+    width: 100%;
+}
+.menu_bar{
+    display: none;
+}
+@media (max-width:768px){
+    ul,
+    li{
+        display: none;
+    }
+    .menu_bar i{
+        font-size: 24px;
+        display: block;
+    }
+    .menu_bar{
+        display: block;
+        float: right;
+       color: yellow;
+}
+    .footerlinks{
+ flex-wrap: wrap;
+ row-gap: 15px;
+}
+
+}
+@media (min-width:768px){
+    menu_bar{
+        color: #dc0000;
+        display: inline;
+    }
+}
